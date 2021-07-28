@@ -1,0 +1,1 @@
+from .conteudo import ConteudoModel
