@@ -9,3 +9,4 @@ from podcast.serializers import ConteudoSerializer
 class ConteudoView(viewsets.ModelViewSet, ):
     queryset = ConteudoModel.objects.all()
     serializer_class = ConteudoSerializer
+
