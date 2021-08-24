@@ -22,7 +22,7 @@ class ConteudoSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         arquivo = validated_data.pop("file")
-        file = ArquivoSerializer(arquivo)
+        file = ArquivoSerializer(data=arquivo)
         file.is_valid(raise_exception=True)
         file = file.save()
         validated_data["file_id"] = file.pk
