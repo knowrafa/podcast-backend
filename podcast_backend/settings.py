@@ -237,9 +237,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Define quais os diretórios de arquivos estáticos
-STATICFILES_DIRS = [
-    normpath(join(BASE_DIR, 'static')),
-]
 
 # Define onde os arquivos serão colocados ao utilizar collectstatic
 # Para servir arquivos estáticos em produção, é preciso adicionar à URL
