@@ -69,7 +69,7 @@ MIDDLEWARE = [
     'auditlog.middleware.AuditlogMiddleware',
 ]
 
-ROOT_URLCONF = APPLICATION_NAME + '.urls'
+ROOT_URLCONF = 'podcast_backend.urls'
 
 TEMPLATES = [
     {
@@ -88,7 +88,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = APPLICATION_NAME + '.wsgi.application'
+WSGI_APPLICATION = 'podcast_backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
