@@ -1,8 +1,6 @@
 from django.test import TestCase
 
-class SomaTest(TestCase):
-    def setUp(self) -> None:
-        pass
 
+class SomaTest(TestCase):
     def test_soma(self):
         self.assertEqual(2, 3)
